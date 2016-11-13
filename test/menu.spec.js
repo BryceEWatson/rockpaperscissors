@@ -20,7 +20,7 @@ describe('menu ui component', () => {
 		renderer.render(React.createElement(MENU, {}));
 		let text = renderer.getRenderOutput().props.children[0];
 		// excersise
-		expect(text).to.equal('React, Paper, Scissors!');
+		expect(text[0]).to.equal('React, Paper, Scissors!');
 		// teardown
 	});
 });

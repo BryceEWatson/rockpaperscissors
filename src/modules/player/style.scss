@@ -1,110 +1,124 @@
 @import '../../css/variables';
 
 .rps-player {
-    display: inline-block;
+	display: inline-block;
 }
+
 .rps-player-wins {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 999em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    font-size: 25px;
-    background-color: $green;
-    line-height: 40px;
-    position: relative;
-    top: 65px;
-    left: 39px;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 999em;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	font-size: 25px;
+	background-color: $green;
+	line-height: 40px;
+	position: relative;
+	top: 65px;
+	left: 39px;
 }
+
 .rps-player-icon {
-    background-color: $secondary-color;
-    border-radius: 999em;
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    line-height: 1;
-    font-size: 36px;
-    position: relative;
-    display: inline-block;
-    background-size: contain;
-    background-repeat: no-repeat;
+	background-color: $secondary-color;
+	border-radius: 999em;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	line-height: 1;
+	font-size: 36px;
+	position: relative;
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
+
 .rps-player-icon--no-choice {
-    background-image: url(../../images/question-mark.svg);
-    background-size: contain;
-    background-position-y: 4px;
+	background-image: url("../../images/question-mark.svg");
+	background-size: contain;
+	background-position-y: 4px;
 }
+
 .rps-player-icon--rock {
-    background-image: url(../../images/rock.svg);
-    background-position-x: 11px;
+	background-image: url("../../images/rock.svg");
+	background-position-x: 11px;
 }
+
 .rps-player-icon--paper {
-    background-image: url(../../images/paper.svg);
-    background-position-x: 11px;
-    background-position-y: 9px;
+	background-image: url("../../images/paper.svg");
+	background-position-x: 11px;
+	background-position-y: 9px;
 }
+
 .rps-player-icon--scissors {
-    background-image: url(../../images/scissors.svg);
-    background-position-x: 13px;
-    background-position-y: 8px;
+	background-image: url("../../images/scissors.svg");
+	background-position-x: 13px;
+	background-position-y: 8px;
 }
+
 .rps-player-icon--winner {
-    background-color: $green;
+	background-color: $green;
 }
+
 .rps-player--two {
-    margin-top: 20px;
+	margin-top: 20px;
 }
+
 .rps-player-action {
-    background-color: $primary-color;
-    border-radius: 999em;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    cursor: pointer;
-    display: inline-block;
-    margin: 5px;
-    background-size: contain;
-    background-repeat: no-repeat;
+	background-color: $primary-color;
+	border-radius: 999em;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
+
 .rps-player-action--rock {
-    background-image: url(../../images/rock.svg);
-    background-position-x: 5px;
+	background-image: url("../../images/rock.svg");
+	background-position-x: 5px;
 }
+
 .rps-player-action--paper {
-    background-image: url(../../images/paper.svg);
-    background-position-x: 5px;
-    background-position-y: 4px;
+	background-image: url("../../images/paper.svg");
+	background-position-x: 5px;
+	background-position-y: 4px;
 }
+
 .rps-player-action--scissors {
-    background-image: url(../../images/scissors.svg);
-    background-position-x: 6px;
-    background-position-y: 4px;
+	background-image: url("../../images/scissors.svg");
+	background-position-x: 6px;
+	background-position-y: 4px;
 }
+
 .rps-player-reload {
-    background-image: url(../../images/reload.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 56px;
-    height: 56px;
-    background-color: $theme-grey-light;
-    border-radius: 999em;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    display: inline-block;
-    margin-bottom: 42px;
-    position: absolute;
+	background-image: url("../../images/reload.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 56px;
+	height: 56px;
+	background-color: $theme-grey-light;
+	border-radius: 999em;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	display: inline-block;
+	margin-bottom: 42px;
+	position: absolute;
 }
+
 .rps-computer-action {
-    background-image: url(../../images/computer.svg);
-    background-color: $primary-color;
-    border-radius: 999em;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-    cursor: pointer;
-    display: inline-block;
-    margin: 5px;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 4px;
+	background-image: url("../../images/computer.svg");
+	background-color: $primary-color;
+	border-radius: 999em;
+	width: 50px;
+	height: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: 4px;
 }
