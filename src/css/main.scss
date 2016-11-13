@@ -1,7 +1,8 @@
-body {
-	background-color: green;
+@import 'variables';
 
-	h1 {
-		color: white;
-	}
+body {
+	background-color: $theme-grey-lightest;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
 }

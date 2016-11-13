@@ -3,20 +3,21 @@
 // Karma configuration
 
 const WebpackKarmaWarningsPlugin = require('./webpack-karma-warnings-plugin');
-const webpackConfig = require('./webpack.config');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpackConfig = require('./webpack.config.js');
 
 module.exports = function (config) {
 
 	webpackConfig.devtool = 'inline-source-map';
 	webpackConfig.entry = {};
 	webpackConfig.output = {};
-	webpackConfig.plugins = [new WebpackKarmaWarningsPlugin()];
+	webpackConfig.plugins = [new WebpackKarmaWarningsPlugin(), new HtmlWebpackPlugin({template: 'src/index.ejs'}), new ExtractTextPlugin("[name].css")];
 
 	config.set({
 		// base path that will be used to resolve all patterns (eg. files, exclude)
 		basePath: '.',
-
-		// frameworks to use
+		// plugins: ['karma-jquery'],		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
 		frameworks: ['mocha', 'chai'],
 
@@ -60,7 +61,7 @@ module.exports = function (config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: [],
+		browsers: ['PhantomJS'],
 
 
 		// Continuous Integration mode
