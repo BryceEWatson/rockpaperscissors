@@ -12,6 +12,8 @@ App state is used to keep track of the players, their score, and more.
 
 The UI follows Google's Material Design specifications (https://design.google.com/)
 
+Play it live! https://bryceewatson.github.io/rockpaperscissors/
+
 <img width="240" alt="screen shot 2016-11-13 at 5 28 01 pm" src="https://cloud.githubusercontent.com/assets/1322843/20250777/3c7dcdec-a9c7-11e6-9bc9-e1cb15bde34a.png">
 
 
